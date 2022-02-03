@@ -194,6 +194,10 @@ ul ol {
   margin-bottom: 0;
 }
 
+ul li {
+  font-size: 18px;
+}
+
 .ul-exp-list {
   margin-top: 8px;
   text-align: justify;
