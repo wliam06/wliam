@@ -248,10 +248,10 @@ sup {
 
 a {
   color: #2A408D;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
-  color: #974a2d;
+  color: #3982f9;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -504,6 +504,11 @@ progress {
   font-weight: 300;
 }
 
+.lead2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -656,6 +661,85 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+}
+
+.container_card {
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 1200px; */
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(24rem + 3vw), 18rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.5em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
 }
 
 @media (min-width: 576px) {
@@ -4689,17 +4773,6 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-}
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -11501,6 +11574,11 @@ h1, .h1 {
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+}
+
+p.lead2 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 p.main {
