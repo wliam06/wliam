@@ -180,11 +180,6 @@ ul {
   padding-left: 2rem;
 }
 
-ul,
-li {
-  font-size: 18px;
-}
-
 ol,
 ul,
 dl {
@@ -197,10 +192,6 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
-}
-
-ul li {
-  font-size: 18px;
 }
 
 .ul-exp-list {
@@ -257,11 +248,10 @@ sup {
 
 a {
   color: #2A408D;
-  text-decoration: none;
+  text-decoration: underline;
 }
-
 a:hover {
-  color: #3982f9;
+  color: #974a2d;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -512,11 +502,6 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
-}
-
-.lead2 {
-  font-size: 1.5rem;
-  font-weight: 500;
 }
 
 .display-1 {
@@ -4139,7 +4124,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #bd5d38;
+  color: #FFFFFF;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4149,7 +4134,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #974a2d;
+  color: #bcbcbc;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -11587,7 +11572,7 @@ p.main {
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: auto auto 0;
+    margin: auto;
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
